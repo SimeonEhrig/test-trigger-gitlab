@@ -9,7 +9,7 @@ jobs:
     - name: trigger Job
       uses: appleboy/gitlab-ci-action@master
       with:
-        url: "https://gitlab.com/hzdr/qedjl-project/test-trigger-gitlab.git"
+        host: "https://gitlab.com/hzdr/qedjl-project/test-trigger-gitlab.git"
         token: ${{ secrets.TOKEN }}
         project_id: 47205304
         debug: true
