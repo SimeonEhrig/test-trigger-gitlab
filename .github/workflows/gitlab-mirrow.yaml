@@ -1,6 +1,6 @@
 name: Mirror and run GitLab CI
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   build:
@@ -8,7 +8,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Mirror + trigger CI
-      uses: SvanBoxel/gitlab-mirror-and-ci-action@master
+      uses: SimeonEhrig/gitlab-mirror-and-ci-action@addForkSupport
       with:
         args: "https://gitlab.com/hzdr/qedjl-project/test-trigger-gitlab.git"
       env:
