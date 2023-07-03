@@ -6,4 +6,4 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - run: ${{ github.github_workspace }}/print.sh
+    - run: ${PWD}/print.sh
