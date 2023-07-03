@@ -6,6 +6,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - run: pwd
-    - run: ls
-    - run: ${PWD}/print.sh
+      - name: Checkout
+        uses: actions/checkout@v3
+      - run: pwd
+      - run: ls
+      - run: ${PWD}/print.sh
