@@ -6,4 +6,4 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - run: echo "$NOT_SECRET"
+    - run: ./print.sh
